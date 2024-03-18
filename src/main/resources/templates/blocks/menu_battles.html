@@ -1,0 +1,31 @@
+<div th:fragment="menu">
+<div class="panel ">
+  <button onclick="menu('add')">Создать</button>
+  <button onclick="menu('edit')">Изменить</button>
+  <button onclick="menu('delete')">Удалить</button>
+</div>
+
+<form class="create" id="add" action="add_battles" method="post" style="display:none;">
+  <h5>Создание</h5>
+  <input type="text" class="input" name="name_battle" required autocomplete="off">Название битвы</input>
+<br>
+  <input type="date" class=" input" name="date_battle" required autocomplete="off">Дата</input>
+  <br>
+  <input type="submit" name="action" value="Создать" class="create_order_btn btn btn-success">
+</form>
+
+<form class="create" id="edit" action="edit_battles" method="post" style="display:none;">
+  <h5>Редактирование</h5>
+  <input type="text" id="id_value" class="input" name="name_battle"  readonly>Название битвы</input>
+  <br>
+  <input type="date" id="order_date_start_value" class=" input" name="battle_date" autocomplete="off">Дата</input>
+  <br>
+  <input type="submit" name="action" value="Изменить" class="create_order_btn btn btn-success">
+</form>
+
+<form class="create" id="delete" action="delete_battles" method="post" style="display:none;">
+  <h5>Вы действительно хотите удалить?</h5>
+  <input type="text" id="id_value_d" class="input" name="delete_name"   readonly></input>
+  <input type="submit" name="action" value="Удалить" class="create_order_btn btn btn-success">
+</form>
+</div>

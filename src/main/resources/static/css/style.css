@@ -1,0 +1,60 @@
+.rows{
+width:50%;
+margin: 0 auto;}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+    .stroka {
+     width: 1000px; /* Ширина слоя */
+     height: 30px; /* Высота слоя */
+     background: #fc0; /* Цвет фона */
+    }
+    .stroka tr {
+     display: block; /* Ссылка как блочный элемент */
+     text-align: center; /* Выравнивание по центру */
+     height: 100%; /* Высота на весь слой */
+     color: #666; /* Цвет ссылки */
+    }
+
+.panel
+{
+padding:5px;
+margin:5px;
+border: solid;
+border-size:1px;
+}
+
+.create
+{
+padding:5px;
+margin:5px;
+border: solid;
+border-size:1px;
+display:none;
+}
+.input
+{
+margin:5px;
+}
+.create_order_btn
+{
+margin-left:5px;
+}
+ table th
+ {
+ background-color: lightblue;
+ font-size:12px;
+ width:50px;
+ }
+
+
+ #color_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  table th { background-color: lightblue; }
+  .hover_Row { background-color: yellow; }
+  .clicked_Row { background-color: lightgreen; }

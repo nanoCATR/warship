@@ -29,10 +29,14 @@ public class Config {
         if (con==null || con.isClosed()) {
             Properties props = new Properties();
 
-            props.setProperty("user", "SYSDBA");
-            props.setProperty("password", "masterkey");
+//            props.setProperty("user", "SYSDBA");
+//            props.setProperty("password", "masterkey");
+//            props.setProperty("encoding", "UTF8");
+//            props.setProperty("path", "jdbc:firebirdsql://localhost:3050/C:/db/WARSHIP.FDB");
+            props.setProperty("user", "postgres");
+            props.setProperty("password", "root");
             props.setProperty("encoding", "UTF8");
-            props.setProperty("path", "jdbc:firebirdsql://localhost:3050/C:/db/WARSHIP.FDB");
+            props.setProperty("path", "jdbc:postgresql://localhost:5432/warships_java");
             con = DriverManager.getConnection(props.getProperty("path"), props);
         }
         return con;
